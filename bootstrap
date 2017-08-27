@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# TODO
+# install vim
+# sudo apt install vim
+
+# install curl
+# sudo apt install curl
+
+# install git
+# sudo apt install git 
+
+# generate github ssh keys
+
+# git config
+# git config --global user.email "gndowns@gmail.com"
+# git config --global user.name "Gabriel Downs"
+
+# install vim-pathogen
+# mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+# curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# clone vim plugins
+# PLUGINS=( "junegunn/fzf.vim" "mattn/emmet-vim" "morhetz/gruvbox"
+#  "scrooloose/nerdcommenter" "scrooloose/nerdtree" "tpope/vim-fugitive" )
+# for p in "${PLUGINS[@]}"
+# do
+#   URL="https://github.com/$p"
+#   REPO=`echo $p | cut -d '/' -f 2`
+#   git clone $URL ~/.vim/bundle/$REPO
+# done
+
+# use .vimrc from dotfiles/
+# ln -s dotfiles/.vimrc ~/.vimrc
+
+# zsh && oh-my-zsh
+# sudo apt install zsh 
+# chsh -s $(which zsh)
+# edit terminal preferences after ~
+
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
