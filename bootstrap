@@ -39,3 +39,29 @@
 # edit terminal preferences after ~
 
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
+# ====tmux====
+# cmake
+# sudo apt install cmake
+
+# this seemed to fix the next step
+# idk I'm drunk
+# sudo apt install libssl-dev
+
+# libevent
+# sudo apt install libevent-dev
+
+# ncurses
+# sudo apt install libncurses5-dev libncursesw5-dev
+
+# this just fixed something
+# sudo apt install autotools-dev
+# sudo apt install automake
+
+# tmux
+# git clone https://github.com/tmux/tmux.git ~/tmux && \
+# cd ~/tmux
+# sh autogen.sh
+# ./configure && make
+# sudo make install
