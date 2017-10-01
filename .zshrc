@@ -16,3 +16,4 @@ source $ZSH/oh-my-zsh.sh
 
 # aliases
 alias tk="tmux kill-session"
+alias py="python3"
