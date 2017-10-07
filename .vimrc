@@ -58,6 +58,8 @@ inoremap <C-d> <CR><Esc>O
 " go to end of line while in insert
 inoremap <C-a> <Esc>A
 
+inoremap <C-o> ()<Esc>i
+
 " space inserts single character in normal mode
 :nnoremap <Space> i_<Esc>r
 
