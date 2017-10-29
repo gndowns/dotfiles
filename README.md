@@ -5,3 +5,4 @@
 - [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 - [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
+- [wizicer/vim-jison](https://github.com/wizicer/vim-jison)
