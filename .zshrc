@@ -18,6 +18,11 @@ source $ZSH/oh-my-zsh.sh
 alias tk="tmux kill-session"
 alias py="python3"
 
+# --- ROBOTICS ---
+export ROS_HOME=~/.ros
+# uncomment for robotics
+source /opt/ros/kinetic/setup.zsh
+
 #
 # MCGILL ROBOTICS CONFIGURATION
 #
@@ -33,10 +38,17 @@ export ROBOT=auv
 export IAMROBOT=false
 export ROBOTIC_PATH="/home/gndowns/Robotics"
 if [[ -f "${ROBOTIC_PATH}/compsys/roboticrc" ]]; then
-  source "${ROBOTIC_PATH}/compsys/roboticrc"
+  # uncomment for mcgill robotics
+  # source "${ROBOTIC_PATH}/compsys/roboticrc"
 else
   echo "Could not find ${ROBOTIC_PATH}/compsys/roboticrc"
   echo "This could occur when moving the robotics directory."
   echo "Please modify ROBOTIC_PATH in your ~/.zshrc"
   echo "to point to your robotics directory."
 fi
+
+# for local ROS tutorials
+# source ~/catkin_ws/devel/setup.zsh
+
+# Comp 417: Robotics
+# source ~/comp417_ws/devel/setup.zsh
