@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/gndowns/.oh-my-zsh
+  export ZSH=/home/gabriel/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -19,9 +19,9 @@ alias tk="tmux kill-session"
 alias py="python3"
 
 # --- ROBOTICS ---
-export ROS_HOME=~/.ros
+# export ROS_HOME=~/.ros
 # uncomment for robotics
-source /opt/ros/kinetic/setup.zsh
+# source /opt/ros/kinetic/setup.zsh
 
 #
 # MCGILL ROBOTICS CONFIGURATION

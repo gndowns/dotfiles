@@ -63,12 +63,14 @@ inoremap <C-o> ()<Esc>i
 " space inserts single character in normal mode
 :nnoremap <Space> i_<Esc>r
 
-
 " PLUGINS
 
 " nerdcommenter
 " add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
+
+" toggle background light/dark
+map <Leader>d :let &background = ( &background == "dark" ? "light" : "dark" )<CR>
 
 
 " fzf
