@@ -2,15 +2,16 @@
 
 # TODO
 # install vim
-# sudo apt install vim
+# sudo apt install -y vim
 
 # install curl
-# sudo apt install curl
+# sudo apt install -y curl
 
 # install git
-# sudo apt install git 
+# sudo apt install -y git
 
 # generate github ssh keys
+https://help.github.com/enterprise/2.12/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
 # git config
 # git config --global user.email "gndowns@gmail.com"
@@ -40,24 +41,25 @@
 
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# ln -s dotfiles/.zshrc ~/.zshrc
 
 # ====tmux====
 # cmake
-# sudo apt install cmake
+# sudo apt install -y cmake
 
 # this seemed to fix the next step
 # idk I'm drunk
-# sudo apt install libssl-dev
+# sudo apt install -y libssl-dev
 
 # libevent
-# sudo apt install libevent-dev
+# sudo apt install -y libevent-dev
 
 # ncurses
-# sudo apt install libncurses5-dev libncursesw5-dev
+# sudo apt install -y libncurses5-dev libncursesw5-dev
 
 # this just fixed something
-# sudo apt install autotools-dev
-# sudo apt install automake
+# sudo apt install -y autotools-dev
+# sudo apt install -y automake
 
 # tmux
 # git clone https://github.com/tmux/tmux.git ~/tmux && \
@@ -65,3 +67,5 @@
 # sh autogen.sh
 # ./configure && make
 # sudo make install
+
+# ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
