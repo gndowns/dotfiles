@@ -37,7 +37,7 @@ alias bel="~/beluga-0.8.2/bin/beluga"
 export EDITOR=vim
 export ROBOT=auv
 export IAMROBOT=false
-export ROBOTIC_PATH="/home/gndowns/Robotics"
+export ROBOTIC_PATH="/home/gabriel/Robotics"
 if [[ -f "${ROBOTIC_PATH}/compsys/roboticrc" ]]; then
   # uncomment for mcgill robotics
   # source "${ROBOTIC_PATH}/compsys/roboticrc"
