@@ -22,7 +22,7 @@ alias bel="~/beluga-0.8.2/bin/beluga"
 # --- ROBOTICS ---
 # export ROS_HOME=~/.ros
 # uncomment for robotics
-# source /opt/ros/kinetic/setup.zsh
+source /opt/ros/kinetic/setup.zsh
 
 #
 # MCGILL ROBOTICS CONFIGURATION
@@ -40,18 +40,12 @@ export IAMROBOT=false
 export ROBOTIC_PATH="/home/gabriel/Robotics"
 if [[ -f "${ROBOTIC_PATH}/compsys/roboticrc" ]]; then
   # uncomment for mcgill robotics
-  # source "${ROBOTIC_PATH}/compsys/roboticrc"
+  source "${ROBOTIC_PATH}/compsys/roboticrc"
 else
-  # echo "Could not find ${ROBOTIC_PATH}/compsys/roboticrc"
-  # echo "This could occur when moving the robotics directory."
-  # echo "Please modify ROBOTIC_PATH in your ~/.zshrc"
-  # echo "to point to your robotics directory."
+  echo "Could not find ${ROBOTIC_PATH}/compsys/roboticrc"
+  echo "This could occur when moving the robotics directory."
+  echo "Please modify ROBOTIC_PATH in your ~/.zshrc"
+  echo "to point to your robotics directory."
 fi
-
-# for local ROS tutorials
-# source ~/catkin_ws/devel/setup.zsh
-
-# Comp 417: Robotics
-# source ~/comp417_ws/devel/setup.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
