@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/gabriel/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -22,7 +22,7 @@ alias bel="~/beluga-0.8.2/bin/beluga"
 # --- ROBOTICS ---
 # export ROS_HOME=~/.ros
 # uncomment for robotics
-source /opt/ros/kinetic/setup.zsh
+# source /opt/ros/kinetic/setup.zsh
 
 #
 # MCGILL ROBOTICS CONFIGURATION
@@ -34,18 +34,18 @@ source /opt/ros/kinetic/setup.zsh
 # ROBOTIC_PATH  Absolute path to directory containing the local
 #               McGill Robotics git repositories.
 #
-export EDITOR=vim
-export ROBOT=auv
-export IAMROBOT=false
-export ROBOTIC_PATH="/home/gabriel/Robotics"
+# export EDITOR=vim
+# export ROBOT=auv
+# export IAMROBOT=false
+# export ROBOTIC_PATH="/home/gabriel/Robotics"
 if [[ -f "${ROBOTIC_PATH}/compsys/roboticrc" ]]; then
   # uncomment for mcgill robotics
-  source "${ROBOTIC_PATH}/compsys/roboticrc"
+  # source "${ROBOTIC_PATH}/compsys/roboticrc"
 else
-  echo "Could not find ${ROBOTIC_PATH}/compsys/roboticrc"
-  echo "This could occur when moving the robotics directory."
-  echo "Please modify ROBOTIC_PATH in your ~/.zshrc"
-  echo "to point to your robotics directory."
+  # echo "Could not find ${ROBOTIC_PATH}/compsys/roboticrc"
+  # echo "This could occur when moving the robotics directory."
+  # echo "Please modify ROBOTIC_PATH in your ~/.zshrc"
+  # echo "to point to your robotics directory."
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
