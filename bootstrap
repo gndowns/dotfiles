@@ -58,7 +58,6 @@ sudo apt install -y silversearcher-ag &&
 sudo apt install -y cmake &&
 
 # this seemed to fix the next step
-# idk I'm drunk
 sudo apt install -y libssl-dev &&
 
 # libevent
