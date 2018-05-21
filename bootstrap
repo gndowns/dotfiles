@@ -53,28 +53,5 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf &&
 # install ag for fast search
 sudo apt install -y silversearcher-ag &&
 
-# ====tmux====
-# cmake
-sudo apt install -y cmake &&
-
-# this seemed to fix the next step
-sudo apt install -y libssl-dev &&
-
-# libevent
-sudo apt install -y libevent-dev &&
-
-# ncurses
-sudo apt install -y libncurses5-dev libncursesw5-dev &&
-
-# this just fixed something
-sudo apt install -y autotools-dev &&
-sudo apt install -y automake &&
-
-# tmux
-git clone https://github.com/tmux/tmux.git ~/tmux && \
-cd ~/tmux
-sh autogen.sh &&
-./configure && make &&
-sudo make install &&
-
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+# GNU Screen
+sudo apt install -y screen
