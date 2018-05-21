@@ -1,0 +1,21 @@
+# Gob's ~/.screenrc
+# bastardized from various blogs and github dotfiles
+# Mostly taken from:
+# (1) http://www.mileszs.com/vim-screen-and-the-awesomest-ide-ever/
+# (2) https://gist.github.com/joaopizani/2718397
+
+# Remove startup copyright message
+startup_message off
+
+# 256 colors (fixes vim colors for gruvbox)
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on
+
+# Clear screen after exiting vim
+altscreen on
+
+# two-line status bar, with current window highlighted
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+
