@@ -6,5 +6,6 @@
 dotfiles=('.vimrc' '.screenrc' '.zshrc')
 
 for f in "${dotfiles[@]}"; do
-  ln -s ./$f $HOME/$f
+  # symbolic link target link_name
+  ln -s $HOME/dotfiles/$f $HOME/$f
 done
