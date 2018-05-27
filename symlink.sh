@@ -6,9 +6,8 @@
 dotfiles=('.vimrc' '.screenrc' '.zshrc')
 
 for f in "${dotfiles[@]}"; do
-  # ask for permission to overwrite existing file
-  echo "Are you sure you want to overwrite $HOME/$f ? [y/n]"
-  read yn
+  # ask permission to overwrite existing file
+  read -p "Are you sure you want to overwrite $HOME/$f ? [y/n] " yn
   if [[ "$yn" == 'y' ]]; then
     # remove old file (to avoid 'file exists' error)
     rm $HOME/$f
