@@ -3,24 +3,29 @@
 # HOWTO
 # generate github ssh keys first here:
 # https://help.github.com/enterprise/2.12/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/ 
-# then run ./bootstrap
+# then run ./bootstrap (as root)
 
-# TODO
+
+# ===== INSTALLS =====
+
+# update dependency lists 
+apt update
+
 # install vim
-sudo apt install -y vim &&
+apt install -y vim &&
 
 # install curl
-sudo apt install -y curl &&
+apt install -y curl &&
 
 # install git
-sudo apt install -y git &&
+apt install -y git &&
 
 
 # git config
 git config --global user.email "gndowns@gmail.com" &&
 git config --global user.name "Gabriel Downs" &&
 
-# install vim-pathogen
+# install vim-pathogen for plugins
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim &&
 
@@ -31,14 +36,14 @@ for p in "${PLUGINS[@]}";
 do
   URL="https://github.com/$p"
   REPO=`echo $p | cut -d '/' -f 2`
-  git clone $URL ~/.vim/bundle/$REPO
+  git clone $URL ~/.vim/bundle/$REPO &&
 done
 
 # use .vimrc from dotfiles/
 ln -s ~/dotfiles/.vimrc ~/.vimrc &&
 
 # zsh && oh-my-zsh
-sudo apt install -y zsh &&
+apt install -y zsh &&
 chsh -s $(which zsh) &&
 # edit terminal preferences after ~
 
@@ -51,7 +56,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf &&
 ~/.fzf/install &&
 
 # install ag for fast search
-sudo apt install -y silversearcher-ag &&
+apt install -y silversearcher-ag &&
 
 # GNU Screen
 sudo apt install -y screen
