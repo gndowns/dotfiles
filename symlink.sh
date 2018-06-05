@@ -8,6 +8,9 @@ targets=('.vimrc' '.screenrc' '.zshrc' 'python.vim')
 links=("$HOME/.vimrc" "$HOME/.screenrc" "$HOME/.zshrc"
   "$HOME/.vim/after/ftplugin/python.vim")
 
+# make vim ftplugin if does not exist
+mkdir -p $HOME/.vim/after/ftplugin
+
 for ((i=0; i<${#targets[@]}; i++)); do
   t="${targets[i]}"
   l="${links[i]}"
