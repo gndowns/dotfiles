@@ -12,6 +12,9 @@ filetype plugin indent on
 " line numbers
 set number
 
+" put colored bar at column 80 (for line length)
+set colorcolumn=80
+
 " Disable Auto comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=o formatoptions-=r
 
