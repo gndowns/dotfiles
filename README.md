@@ -26,15 +26,27 @@ $ ssh-keygen -t rsa -b 4096 -C "email@example.com"
 4. Copy the public key to your clipboard
 On MacOS:
 ```
-$ pbcopy < `~/.ssh/id_rsa.pub
+$ pbcopy < ~/.ssh/<name_of_key>.pub
 ```
 
 On Linux:
 ```
-$ xclip -sel clip < ~/.ssh/id_rsa.pub
+$ xclip -sel clip < ~/.ssh/<name_of_key>.pub
 ```
 
 5. Add the key to your GitHub / GitLab account in settings
+
+6. Add your key pair to the SSH Agent
+```
+$ eval $(ssh-agent -s)
+$ ssh-add ~/.ssh/<name_of_key>
+```
+
+7. Add a new entry for the key in `~/.ssh/config` e.g.
+```
+Host gitlab.com
+  IdentityFile ~/.ssh/id_rsa_gitlab
+```
 
 ### VIM Plugins
 - [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
