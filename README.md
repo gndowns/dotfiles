@@ -48,7 +48,25 @@ Host gitlab.com
   IdentityFile ~/.ssh/id_rsa_gitlab
 ```
 
-### VIM Plugins
+#### Symlinking Config Files
+This repo contains config files for vim, gnu screen, and zsh. To symlink your system's config files to the ones in this repo, run
+```
+$ ./symlink.sh
+```
+It will prompt you if you want to symlink each individual config file, so you can pick and choose which ones you want to use.
+
+**Note**: This will overwrite your existing config files!
+
+#### Vim Plugins
+The included `.vimrc` config file relies on several plugins. You can install
+them all using pathogen by running
+```
+$ ./vim_plugins.sh
+```
+This will download each of the plugins to `~/.vim/bundle`.
+
+The plugins used are listed here:
+
 - [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
 - [mattn/emmet-vim](https://github.com/mattn/emmet-vim)
 - [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
