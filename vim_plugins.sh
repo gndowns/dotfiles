@@ -27,3 +27,12 @@ for p in "${PLUGINS[@]}"; do
     git clone $URL $DIR
   fi
 done
+
+# fzf (for fzf.vim)
+if ! cd ~/.fzf; then
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf &&
+  ~/.fzf/install
+fi
+
+# Ag (for fzf.vim fast search)
+sudo apt install -y silversearcher-ag
