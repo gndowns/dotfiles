@@ -50,7 +50,7 @@ set shiftwidth=2
 let mapleader = "'"
 
 " paranthesis and bracket matching with ctrl key
-inoremap { {}<Esc>i
+" inoremap { {}<Esc>i
 
 " escape paranthesis
 inoremap <C-f> <Esc>la
